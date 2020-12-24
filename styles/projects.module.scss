@@ -1,0 +1,61 @@
+.projectContainer {
+  min-height: 100vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .projectFirstContainer {
+    min-height: 90vh;
+    width: 100%;
+    padding-top: 20%;
+    .spanOne {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #e71d36;
+      font-size: 3rem;
+      margin: auto;
+
+      h1 {
+        font-weight: bolder;
+        transition: visibility 200ms ease;
+        position: relative;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        opacity: 1;
+        width: 100%;
+
+        a {
+          width: 90%;
+          position: absolute;
+          left: 0;
+          padding-left: 10%;
+          visibility: hidden;
+          background-color: #011627;
+        }
+
+        &:hover {
+          visibility: hidden;
+          background-color: #011627;
+          transition: visibility 0ms ease-in;
+
+          a {
+            visibility: visible;
+            padding-left: 10%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
