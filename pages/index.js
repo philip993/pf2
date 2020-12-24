@@ -1,6 +1,6 @@
-import IndexImage from '../components/IndexImage/IndexImage';
-import IndexText from '../components/IndexText';
-import styles from '../styles/index.module.scss';
+import IndexImage from "../components/IndexImage/IndexImage";
+import IndexText from "../components/IndexText/IndexText";
+import styles from "../styles/index.module.scss";
 
 export default function Home() {
   return (
