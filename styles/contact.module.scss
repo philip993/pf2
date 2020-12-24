@@ -1,0 +1,87 @@
+.contactContainer {
+  min-height: 100vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .contactFirstContainer {
+    height: 90vh;
+    width: 100%;
+    border: 1px solid #011627;
+    font-size: 2.5rem;
+
+    h1 {
+      color: #fdfffc;
+      margin-top: 30%;
+      padding-left: 5%;
+      opacity: 1;
+      animation-name: fadeIn;
+      animation-duration: 2s;
+      opacity: 1;
+    }
+  }
+
+  .contactSecondContainer {
+    height: 90vh;
+    width: 100%;
+    border: 1px solid #011627;
+    color: #fdfffc;
+    padding: 10%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .spanOne {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #e71d36;
+      font-size: 1.5rem;
+      //   padding-top: 10%;
+      margin: auto;
+
+      h1 {
+        font-weight: bolder;
+        transition: visibility 200ms ease;
+        position: relative;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        opacity: 1;
+
+        a {
+          width: 90%;
+          position: absolute;
+          left: 0;
+          padding-left: 10%;
+          visibility: hidden;
+          background-color: #011627;
+        }
+
+        &:hover {
+          visibility: hidden;
+          background-color: #011627;
+          transition: visibility 0ms ease-in;
+
+          a {
+            visibility: visible;
+            padding-left: 10%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
