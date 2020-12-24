@@ -1,4 +1,4 @@
-import styles from "../styles/projects.module.scss";
+import styles from '../styles/projects.module.scss';
 
 const Projects = () => {
   return (
@@ -7,7 +7,7 @@ const Projects = () => {
         <span className={styles.spanOne}>
           <h1>
             E-Commerce
-            <a href="/">E-Commerce</a>
+            <a href="/ecommerce">E-Commerce</a>
           </h1>
         </span>
         <span className={styles.spanOne}>
