@@ -1,0 +1,104 @@
+.aboutContainer {
+  min-height: 100vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .aboutFirstContainer {
+    height: 90vh;
+    width: 100%;
+    border: 1px solid #011627;
+    font-size: 2.5rem;
+
+    h1 {
+      color: #fdfffc;
+      margin-top: 30%;
+      padding-left: 5%;
+      opacity: 1;
+      animation-name: fadeIn;
+      animation-duration: 2s;
+      opacity: 1;
+    }
+  }
+
+  .aboutSecondContainer {
+    height: 90vh;
+    width: 100%;
+    background-image: url("../public/about-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    // border: 1px solid #fdfffc;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+  }
+
+  .aboutThirdContainer {
+    min-height: 90vh;
+    width: 100%;
+    border: 1px solid #011627;
+    color: #fdfffc;
+    padding: 10%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .buttonContainer {
+      display: flex;
+      flex-direction: row;
+      align-content: space-between;
+      justify-content: center;
+      margin-top: 10%;
+      font-weight: 900;
+
+      .buttonDownload,
+      .buttonCv {
+        width: 30%;
+        color: #fdfffc;
+        border: 1px solid #fdfffc;
+        align-content: space-between;
+        margin: auto;
+
+        .icon {
+          display: none;
+          right: 0;
+          padding-right: 2%;
+          width: 20px;
+          height: 20px;
+        }
+
+        &:hover {
+          background-color: rgba(#fdfffc, 0.3);
+          text-align: left;
+          font-weight: bold;
+          .icon {
+            display: block;
+            position: absolute;
+          }
+        }
+
+        // &:hover::after {
+        //   font-family: "Font Awesome 5 Free";
+        //   content: "\f56d";
+        //   font-weight: 900;
+        // }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
