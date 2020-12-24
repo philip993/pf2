@@ -1,0 +1,40 @@
+.indexContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #bebebe;
+  height: 100vh;
+  width: 50%;
+  padding-top: 10%;
+  background-color: #333745;
+
+  h1 {
+    font-size: 5rem;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+    color: #e63462;
+    transition: visibility 100ms ease;
+
+    a {
+      visibility: hidden;
+      transition: visibility 100ms ease;
+    }
+
+    &:hover {
+      visibility: hidden;
+
+      a {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
