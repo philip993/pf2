@@ -5,26 +5,85 @@
   height: 100vh;
   width: 50%;
   padding-top: 10%;
-  background-color: #333745;
+  background-color: #011627;
+  font-weight: 900;
+  letter-spacing: 2px;
 
-  h1 {
-    font-size: 5rem;
+  .spanOne {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fdfffc;
+    font-size: 4rem;
+    padding-top: 10%;
+
+    h1 {
+      font-weight: bolder;
+      transition: visibility 200ms ease;
+      position: relative;
+      animation-name: fadeIn;
+      animation-duration: 2s;
+      opacity: 1;
+      margin: 0%;
+
+      a {
+        width: 90%;
+        position: absolute;
+        left: 0;
+        padding-left: 10%;
+        visibility: hidden;
+        background-color: #011627;
+      }
+
+      &:hover {
+        visibility: hidden;
+        background-color: #011627;
+        transition: visibility 0ms ease-in;
+
+        a {
+          visibility: visible;
+          padding-left: 10%;
+        }
+      }
+    }
+  }
+
+  .spanTwo,
+  .spanThree {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #e71d36;
     animation-name: fadeIn;
     animation-duration: 2s;
     opacity: 1;
-    color: #e63462;
-    transition: visibility 100ms ease;
 
-    a {
-      visibility: hidden;
-      transition: visibility 100ms ease;
-    }
-
-    &:hover {
-      visibility: hidden;
+    h1 {
+      transition: visibility 200ms ease;
+      position: relative;
+      margin: 0%;
 
       a {
-        visibility: visible;
+        width: 90%;
+        position: absolute;
+        left: 0;
+        padding-left: 10%;
+        visibility: hidden;
+        background-color: #011627;
+      }
+
+      &:hover {
+        visibility: hidden;
+        background-color: #011627;
+        transition: visibility 0ms ease-in;
+
+        a {
+          visibility: visible;
+          padding-left: 10%;
+        }
       }
     }
   }
