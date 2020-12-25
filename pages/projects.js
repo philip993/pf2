@@ -1,4 +1,4 @@
-import styles from '../styles/projects.module.scss';
+import styles from "../styles/projects.module.scss";
 
 const Projects = () => {
   return (
@@ -13,7 +13,7 @@ const Projects = () => {
         <span className={styles.spanOne}>
           <h1>
             OSM-Maps
-            <a href="/">OSM-Maps</a>
+            <a href="/osm">OSM-Maps</a>
           </h1>
         </span>
         <span className={styles.spanOne}>
