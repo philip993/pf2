@@ -28,14 +28,13 @@
       opacity: 1;
       animation-name: fadeIn;
       animation-duration: 2s;
-      opacity: 1;
     }
   }
 
   .ecommerceSecondContainer {
     height: 90vh;
     width: 100%;
-    background-image: url('../public/ecommerce.jpg');
+    background-image: url("../public/ecommerce.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,7 +45,7 @@
   }
 
   .ecommerceThirdContainer {
-    min-height: 90vh;
+    min-height: 80vh;
     width: 100%;
     border: 1px solid #fdfffc;
     color: #011627;
@@ -58,10 +57,25 @@
     p {
       font-size: 1.2rem;
     }
+
+    .techStackContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: auto;
+      width: 100%;
+      flex-wrap: wrap;
+      padding-top: 15%;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
   }
 
   .ecommerceFourthContainer {
-    min-height: 90vh;
+    min-height: 80vh;
     width: 100%;
     border: 1px solid #fdfffc;
     color: #011627;
@@ -76,7 +90,7 @@
   }
 
   .ecommerceFifthContainer {
-    min-height: 90vh;
+    min-height: 80vh;
     width: 100%;
     border: 1px solid #fdfffc;
     color: #011627;
@@ -88,6 +102,17 @@
     p {
       font-size: 1.2rem;
     }
+  }
+
+  .ecommerceSixthContainer {
+    min-height: 80vh;
+    width: 100%;
+    border: 1px solid #fdfffc;
+    color: #011627;
+    padding: 10%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
   }
 }
 
