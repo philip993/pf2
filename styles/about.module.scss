@@ -25,12 +25,11 @@
   .aboutSecondContainer {
     height: 90vh;
     width: 100%;
-    background-image: url("../public/about-bg.jpg");
+    background-image: url('../public/about-bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-    // border: 1px solid #fdfffc;
     animation-name: fadeIn;
     animation-duration: 2s;
     opacity: 1;
@@ -58,7 +57,6 @@
       margin-top: 10%;
       font-weight: 900;
 
-      .buttonDownload,
       .buttonCv {
         width: 30%;
         color: #fdfffc;
@@ -66,29 +64,25 @@
         align-content: space-between;
         margin: auto;
 
-        .icon {
-          display: none;
-          right: 0;
-          padding-right: 2%;
-          width: 20px;
-          height: 20px;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 0%;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 0;
+          z-index: -1;
         }
 
         &:hover {
+          transition: all 1.5s;
+          width: 35%;
           background-color: rgba(#fdfffc, 0.3);
-          text-align: left;
+          letter-spacing: 1px;
           font-weight: bold;
-          .icon {
-            display: block;
-            position: absolute;
-          }
+          box-shadow: 0px 0px 5px #c7efcf;
         }
-
-        // &:hover::after {
-        //   font-family: "Font Awesome 5 Free";
-        //   content: "\f56d";
-        //   font-weight: 900;
-        // }
       }
     }
   }
