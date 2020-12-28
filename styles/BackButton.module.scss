@@ -1,0 +1,31 @@
+.backContainer {
+  background: transparent;
+  z-index: 99;
+  position: fixed;
+  right: 8%;
+  top: 8%;
+
+  .backButton {
+    color: #fe5f55;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 2px solid #fe5f55;
+    transition: all ease 2s;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
