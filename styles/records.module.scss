@@ -1,0 +1,172 @@
+.recordsContainer {
+  min-height: 100vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fdfffc;
+
+  .recordsFirstContainer {
+    height: 90vh;
+    width: 100%;
+    border: 1px solid #fdfffc;
+    font-size: 2.5rem;
+
+    h1 {
+      color: #011627;
+      margin-top: 30%;
+      padding-left: 5%;
+      animation-name: fadeIn;
+      animation-duration: 2s;
+      opacity: 1;
+    }
+
+    p {
+      color: #2ec4b6;
+      padding-left: 5%;
+      opacity: 1;
+      animation-name: fadeIn;
+      animation-duration: 2s;
+    }
+  }
+
+  .recordsSecondContainer {
+    height: 90vh;
+    width: 100%;
+    background-image: url('../public/records.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+  }
+
+  .recordsThirdContainer {
+    min-height: 80vh;
+    width: 100%;
+    border: 1px solid #fdfffc;
+    color: #011627;
+    padding: 10%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      padding-top: 5%;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .techStackContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: auto;
+      width: 100%;
+      flex-wrap: wrap;
+      padding-top: 5%;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .recordsFourthContainer {
+    min-height: 80vh;
+    width: 100%;
+    border: 1px solid #fdfffc;
+    color: #011627;
+    padding: 10%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .recordsFifthContainer {
+    min-height: 80vh;
+    width: 100%;
+    border: 1px solid #fdfffc;
+    color: #011627;
+    padding: 10%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .recordsSixthContainer {
+    min-height: 80vh;
+    width: 100%;
+    border: 1px solid #fdfffc;
+    color: #011627;
+    padding: 10%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .buttonContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-self: flex-start;
+      margin-top: 10%;
+      font-weight: 900;
+
+      .buttonGithub {
+        width: 30%;
+        color: #e63462;
+        border: 1px solid #e63462;
+        align-content: space-between;
+        margin: auto;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 0%;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 0;
+          z-index: -1;
+        }
+
+        &:hover {
+          transition: all 1.5s;
+          width: 35%;
+          // background-color: rgba(#e63462, 0.3);
+          letter-spacing: 1px;
+          font-weight: bold;
+          box-shadow: 0px 0px 5px #e63462;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
