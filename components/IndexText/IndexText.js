@@ -1,4 +1,4 @@
-import styles from "../../styles/IndexText.module.scss";
+import styles from '../../styles/IndexText.module.scss';
 const IndexText = () => {
   return (
     <div className={styles.indexContainer}>
