@@ -1,14 +1,16 @@
-import styles from "../styles/about.module.scss";
-import { Button } from "@material-ui/core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from '../styles/about.module.scss';
+import { Button } from '@material-ui/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faChevronDown,
   faChevronRight,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
+import Layout from '../components/Layout/Layout';
 
 const About = () => {
   return (
     <div className={styles.aboutContainer}>
+      <Layout />
       <div className={styles.aboutFirstContainer}>
         <h1>Full Stack JavaScript Developer</h1>
       </div>
@@ -47,20 +49,16 @@ const About = () => {
           knowledge has pushed me onto the path in programming, firstly in
           Front-end development, then continued with Node.js in Back-end
           development and finally becoming a Full Stack Developer.
-          {/* Constantly pushing
-          myself for more knowledge, I've taken my adventure in programming,
-          firstly in Front-end development. The path continue with Node.js in
-          Back-end, ending up as Full Stack Developer. */}
         </p>
         <div className={styles.buttonContainer}>
           <Button className={styles.buttonCv}>
-            View CV{" "}
-            <FontAwesomeIcon icon={faChevronRight} className={styles.icon} />
+            View CV{' '}
+            {/* <FontAwesomeIcon icon={faChevronRight} className={styles.icon} /> */}
           </Button>
-          <Button className={styles.buttonDownload}>
-            Download{" "}
+          {/* <Button className={styles.buttonDownload}>
+            Download{' '}
             <FontAwesomeIcon icon={faChevronDown} className={styles.icon} />
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>

@@ -1,8 +1,10 @@
-import styles from "../styles/contact.module.scss";
+import Layout from '../components/Layout/Layout';
+import styles from '../styles/contact.module.scss';
 
 const Contact = () => {
   return (
     <div className={styles.contactContainer}>
+      <Layout />
       <div className={styles.contactFirstContainer}>
         <h1>Feel Free to Contact Me!</h1>
       </div>
@@ -28,7 +30,7 @@ const Contact = () => {
         </span>
         <span className={styles.spanOne}>
           <h1>
-            GitHub{" "}
+            GitHub{' '}
             <a href="https://github.com/philip993?tab=repositories">GitHub</a>
           </h1>
         </span>
