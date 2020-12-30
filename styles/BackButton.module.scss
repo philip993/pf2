@@ -21,6 +21,27 @@
   }
 }
 
+@media all and (max-width: 780px) {
+  .backContainer {
+    right: 5%;
+    top: 5%;
+    z-index: 1;
+
+    .backButton {
+      font-size: 1.2rem;
+      border: 1px solid #fe5f55;
+      background-color: rgba(#fe5f55, 0.1);
+    }
+  }
+}
+
+@media print {
+  .backContainer,
+  .backContainer * {
+    display: none !important;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
