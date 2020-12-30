@@ -42,7 +42,6 @@
       align-items: center;
       color: #e71d36;
       font-size: 1.5rem;
-      //   padding-top: 10%;
       margin: auto;
 
       h1 {
@@ -71,6 +70,136 @@
           a {
             visibility: visible;
             padding-left: 5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .contactContainer {
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .contactFirstContainer {
+      height: 90vh;
+      width: 100%;
+      font-size: 1.5rem;
+
+      h1 {
+        margin-top: 40%;
+        width: 100%;
+        padding-left: 5%;
+      }
+    }
+
+    .contactSecondContainer {
+      height: 90vh;
+      width: 100%;
+      padding: 5%;
+      padding-top: 0%;
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      .spanOne {
+        font-size: 1rem;
+
+        h1 {
+          font-weight: bolder;
+          transition: visibility 200ms ease;
+          position: relative;
+          animation-name: fadeIn;
+          animation-duration: 2s;
+          opacity: 1;
+          width: 100%;
+
+          a {
+            width: 90%;
+            position: absolute;
+            left: 0;
+            padding-left: 5%;
+            visibility: hidden;
+            background-color: #011627;
+          }
+
+          &:hover {
+            visibility: hidden;
+            background-color: #011627;
+            transition: visibility 0ms ease-in;
+
+            a {
+              visibility: visible;
+              padding-left: 5%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1100px) {
+  .contactContainer {
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .contactFirstContainer {
+      height: 90vh;
+      width: 100%;
+      font-size: 2.5rem;
+
+      h1 {
+        margin-top: 40%;
+        width: 100%;
+        padding-left: 5%;
+      }
+    }
+
+    .contactSecondContainer {
+      height: 90vh;
+      width: 100%;
+      padding: 5%;
+      padding-top: 0%;
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .spanOne {
+        font-size: 1.4rem;
+
+        h1 {
+          font-weight: bolder;
+          transition: visibility 200ms ease;
+          position: relative;
+          animation-name: fadeIn;
+          animation-duration: 2s;
+          opacity: 1;
+          width: 100%;
+
+          a {
+            width: 90%;
+            position: absolute;
+            left: 0;
+            padding-left: 5%;
+            visibility: hidden;
+            background-color: #011627;
+          }
+
+          &:hover {
+            visibility: hidden;
+            background-color: #011627;
+            transition: visibility 0ms ease-in;
+
+            a {
+              visibility: visible;
+              padding-left: 5%;
+            }
           }
         }
       }
