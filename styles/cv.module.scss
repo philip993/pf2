@@ -1,0 +1,632 @@
+.cvContainer {
+  min-height: 100vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fdfffc;
+
+  .cvFirstContainer {
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+    width: 100%;
+    border: 1px solid #fdfffc;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+    padding: 5% 10% 5% 10%;
+
+    .spanLeft {
+      width: 50%;
+      margin-top: 10%;
+
+      h1 {
+        color: #011627;
+        font-size: 3rem;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        opacity: 1;
+      }
+
+      h4 {
+        font-size: 2rem;
+        color: #fe5f55;
+      }
+    }
+    .spanRight {
+      width: 50%;
+      padding-top: 10%;
+      text-align: right;
+
+      .street,
+      .city {
+        color: #011627;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+        color: #fe5f55;
+      }
+    }
+  }
+
+  .cvSecondContainer {
+    min-height: 30vh;
+    width: 100%;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+    padding: 5% 10% 5% 10%;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .cvThirdContainer {
+    min-height: 50vh;
+    width: 100%;
+    border: 1px solid #fdfffc;
+    color: #011627;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+    padding: 5% 10% 5% 10%;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 1.4rem;
+      margin: 0;
+      padding: 0;
+    }
+    h5 {
+      color: #2ec4b6;
+      font-size: 1.1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    ul {
+      list-style: square;
+      li {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .cvFourthContainer {
+    min-height: 30vh;
+    width: 100%;
+    border: 1px solid #fdfffc;
+    color: #011627;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+    padding: 5% 10% 5% 10%;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    .department {
+      font-size: 1.3rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    h5 {
+      color: #2ec4b6;
+      font-size: 1.1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .cvFifthContainer {
+    min-height: 80vh;
+    width: 100%;
+    border: 1px solid #fdfffc;
+    color: #011627;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    opacity: 1;
+    padding: 5% 10% 5% 10%;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 1.4rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .cvContainer {
+    min-height: 100vh;
+    min-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #fdfffc;
+
+    .cvFirstContainer {
+      display: flex;
+      flex-direction: column;
+      min-height: 50vh;
+      width: 100%;
+      padding: 10% 5% 5% 5%;
+
+      .spanLeft {
+        width: 100%;
+        margin-top: 10%;
+        text-align: center;
+
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 0%;
+        }
+
+        h4 {
+          font-size: 1.5rem;
+          margin: 2% 0% 0% 0%;
+        }
+      }
+      .spanRight {
+        width: 100%;
+        margin-top: 5%;
+        text-align: center;
+
+        h4 {
+          font-size: 1.2rem;
+          margin: 0;
+        }
+      }
+    }
+
+    .cvSecondContainer {
+      min-height: 100vh;
+      width: 100%;
+      padding: 10% 5% 5% 5%;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .cvThirdContainer {
+      min-height: 50vh;
+      width: 100%;
+      padding: 10% 5% 5% 5%;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      h4 {
+        font-size: 1.3rem;
+      }
+      h5 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      ul {
+        list-style: square;
+        li {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .cvFourthContainer {
+      min-height: 50vh;
+      width: 100%;
+      padding: 10% 5% 5% 5%;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      h4 {
+        font-size: 1.3rem;
+      }
+
+      .department {
+        font-size: 1.3rem;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+      }
+
+      h5 {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .cvFifthContainer {
+      min-height: 80vh;
+      width: 100%;
+      padding: 10% 5% 5% 5%;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      h4 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media print {
+  .cvContainer {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5%;
+    background-color: #fdfffc;
+
+    .cvFirstContainer {
+      display: flex;
+      flex-direction: row;
+      min-height: 15vh;
+      width: 100%;
+      border: 1px solid #fdfffc;
+      padding: 5%;
+
+      .spanLeft {
+        width: 50%;
+        margin-top: 0%;
+        text-align: left;
+
+        h1 {
+          color: #011627;
+          font-size: 1.8rem;
+        }
+
+        h4 {
+          font-size: 1.4rem;
+          color: #fe5f55;
+        }
+      }
+      .spanRight {
+        width: 50%;
+        padding-top: 0%;
+        text-align: right;
+
+        .street,
+        .city {
+          color: #011627;
+        }
+
+        h4 {
+          font-size: 1.3rem;
+          color: #fe5f55;
+        }
+      }
+    }
+
+    .cvSecondContainer {
+      min-height: 30vh;
+      width: 100%;
+      padding: 5%;
+      border-bottom: 1px solid #011627;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .cvThirdContainer {
+      min-height: 50vh;
+      width: 100%;
+      border: 1px solid #fdfffc;
+      color: #011627;
+      padding: 5%;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      h4 {
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 0;
+      }
+      h5 {
+        color: #2ec4b6;
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      ul {
+        list-style: square;
+        li {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .cvFourthContainer {
+      min-height: 30vh;
+      width: 100%;
+      border: 1px solid #fdfffc;
+      color: #011627;
+      padding: 5%;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      h4 {
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+
+      .department {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      h5 {
+        color: #2ec4b6;
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .cvFifthContainer {
+      min-height: 50vh;
+      width: 100%;
+      border: 1px solid #fdfffc;
+      color: #011627;
+      padding: 5%;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1100px) {
+  .cvContainer {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5%;
+    background-color: #fdfffc;
+
+    .cvFirstContainer {
+      display: flex;
+      flex-direction: row;
+      min-height: 15vh;
+      width: 100%;
+      border: 1px solid #fdfffc;
+      padding: 5%;
+
+      .spanLeft {
+        width: 50%;
+        margin-top: 0%;
+        text-align: left;
+
+        h1 {
+          color: #011627;
+          font-size: 1.8rem;
+        }
+
+        h4 {
+          font-size: 1.4rem;
+          color: #fe5f55;
+        }
+      }
+      .spanRight {
+        width: 50%;
+        padding-top: 0%;
+        text-align: right;
+
+        .street,
+        .city {
+          color: #011627;
+        }
+
+        h4 {
+          font-size: 1.3rem;
+          color: #fe5f55;
+        }
+      }
+    }
+
+    .cvSecondContainer {
+      min-height: 30vh;
+      width: 100%;
+      padding: 5%;
+      border-bottom: 1px solid #011627;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .cvThirdContainer {
+      min-height: 50vh;
+      width: 100%;
+      border: 1px solid #fdfffc;
+      color: #011627;
+      padding: 5%;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      h4 {
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 0;
+      }
+      h5 {
+        color: #2ec4b6;
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      ul {
+        list-style: square;
+        li {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .cvFourthContainer {
+      min-height: 30vh;
+      width: 100%;
+      border: 1px solid #fdfffc;
+      color: #011627;
+      padding: 5%;
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      h4 {
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+
+      .department {
+        font-size: 1.2rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      h5 {
+        color: #2ec4b6;
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .cvFifthContainer {
+      min-height: 50vh;
+      width: 100%;
+      border: 1px solid #fdfffc;
+      color: #011627;
+      padding: 5%;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
