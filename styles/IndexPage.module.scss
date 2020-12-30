@@ -1,0 +1,411 @@
+.indexContainer {
+  height: 100vh;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+
+  .indexFirstContainer {
+    width: 80%;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    .spanOne {
+      color: #fdfffc;
+      font-size: 4rem;
+
+      h1 {
+        font-weight: bolder;
+        transition: visibility 200ms ease;
+        position: relative;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        opacity: 1;
+        margin: 0%;
+
+        a {
+          width: 90%;
+          position: absolute;
+          left: 0;
+          padding-left: 10%;
+          visibility: hidden;
+          background-color: #011627;
+        }
+
+        &:hover {
+          visibility: hidden;
+          background-color: #011627;
+          transition: visibility 0ms ease-in;
+
+          a {
+            visibility: visible;
+            padding-left: 10%;
+          }
+        }
+      }
+    }
+
+    .spanTwo {
+      color: #e71d36;
+      font-size: 4rem;
+
+      h1 {
+        font-weight: bolder;
+        transition: visibility 200ms ease;
+        position: relative;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        opacity: 1;
+        margin: 0%;
+
+        a {
+          width: 90%;
+          position: absolute;
+          left: 0;
+          padding-left: 10%;
+          visibility: hidden;
+          background-color: #011627;
+        }
+
+        &:hover {
+          visibility: hidden;
+          background-color: #011627;
+          transition: visibility 0ms ease-in;
+
+          a {
+            visibility: visible;
+            padding-left: 10%;
+          }
+        }
+      }
+    }
+
+    .spanThree {
+      color: #e71d36;
+      font-size: 4rem;
+
+      h1 {
+        font-weight: bolder;
+        transition: visibility 200ms ease;
+        position: relative;
+        animation-name: fadeIn;
+        animation-duration: 3s;
+        opacity: 1;
+        margin: 0%;
+
+        a {
+          width: 90%;
+          position: absolute;
+          left: 0;
+          padding-left: 10%;
+          visibility: hidden;
+          background-color: #011627;
+        }
+
+        &:hover {
+          visibility: hidden;
+          background-color: #011627;
+          transition: visibility 0ms ease-in;
+
+          a {
+            visibility: visible;
+            padding-left: 10%;
+          }
+        }
+      }
+    }
+  }
+
+  .indexSecondContainer {
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    animation-name: fade-in;
+    animation-duration: 2s;
+
+    img {
+      width: 400px;
+      height: 400px;
+      margin: auto;
+    }
+  }
+
+  .indexCover {
+    display: none;
+  }
+  .indexThirdContainer {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1100px) {
+  .indexContainer {
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .indexFirstContainer {
+      width: 55%;
+      height: 100vh;
+      padding-top: 0%;
+
+      .spanOne {
+        font-size: 3rem;
+
+        h1 {
+          a {
+            width: 100%;
+          }
+        }
+        .mobile {
+          visibility: hidden;
+          background-color: #011627;
+          transition: visibility 0ms ease-in;
+        }
+
+        .mobileActive {
+          visibility: visible;
+          padding-left: 2%;
+        }
+      }
+
+      .spanTwo {
+        font-size: 3rem;
+
+        h1 {
+          a {
+            width: 100%;
+          }
+        }
+        .mobile {
+          visibility: hidden;
+          background-color: #011627;
+          transition: visibility 0ms ease-in;
+        }
+
+        .mobileActive {
+          visibility: visible;
+          padding-left: 2%;
+        }
+      }
+
+      .spanThree {
+        font-size: 3rem;
+
+        h1 {
+          a {
+            width: 100%;
+          }
+        }
+
+        .mobile {
+          visibility: hidden;
+          background-color: #011627;
+          transition: visibility 0ms ease-in;
+        }
+
+        .mobileActive {
+          visibility: visible;
+          padding-left: 2%;
+        }
+      }
+    }
+
+    .indexSecondContainer {
+      width: 45%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 1;
+      animation-name: fade-in;
+      animation-duration: 2s;
+
+      img {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+      }
+    }
+
+    .indexCover {
+      display: block;
+      z-index: 99;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(#e71d36, 0);
+    }
+
+    .indexThirdContainer {
+      display: block;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 0;
+      z-index: 1;
+      color: 1px solid #fff;
+      color: #fff;
+      -webkit-animation: action 0.7s infinite alternate;
+      animation: action 1s infinite alternate;
+    }
+
+    .indexThirdContainerOff {
+      display: none;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .indexContainer {
+    height: 100vh;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .indexFirstContainer {
+      width: 100%;
+      height: 100vh;
+      padding-top: 0%;
+
+      .spanOne {
+        font-size: 2rem;
+
+        h1 {
+          a {
+            width: 100%;
+          }
+        }
+        .mobile {
+          visibility: hidden;
+          background-color: #011627;
+          transition: visibility 0ms ease-in;
+        }
+
+        .mobileActive {
+          visibility: visible;
+          padding-left: 2%;
+        }
+      }
+
+      .spanTwo {
+        font-size: 2rem;
+
+        h1 {
+          a {
+            width: 100%;
+          }
+        }
+        .mobile {
+          visibility: hidden;
+          background-color: #011627;
+          transition: visibility 0ms ease-in;
+        }
+
+        .mobileActive {
+          visibility: visible;
+          padding-left: 2%;
+        }
+      }
+
+      .spanThree {
+        font-size: 2rem;
+
+        h1 {
+          a {
+            width: 100%;
+          }
+        }
+
+        .mobile {
+          visibility: hidden;
+          background-color: #011627;
+          transition: visibility 0ms ease-in;
+        }
+
+        .mobileActive {
+          visibility: visible;
+          padding-left: 2%;
+        }
+      }
+    }
+
+    .indexSecondContainer {
+      display: none;
+    }
+
+    .indexCover {
+      display: block;
+      z-index: 99;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(#e71d36, 0);
+    }
+
+    .indexThirdContainer {
+      display: block;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 0;
+      z-index: 1;
+      color: 1px solid #fff;
+      color: #fff;
+      -webkit-animation: action 0.7s infinite alternate;
+      animation: action 1s infinite alternate;
+    }
+
+    .indexThirdContainerOff {
+      display: none;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
