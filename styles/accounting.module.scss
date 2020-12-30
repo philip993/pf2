@@ -162,6 +162,196 @@
   }
 }
 
+@media all and (max-width: 767px) {
+  .accountingContainer {
+    min-height: 100vh;
+    min-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #fdfffc;
+
+    .accountingFirstContainer {
+      height: 90vh;
+      width: 100%;
+      font-size: 1.5rem;
+
+      h1 {
+        margin-top: 40%;
+      }
+
+      p {
+        font-size: 1.2rem;
+        padding-left: 5%;
+      }
+    }
+
+    .accountingSecondContainer {
+      height: 90vh;
+      width: 100%;
+    }
+
+    .accountingThirdContainer {
+      min-height: 80vh;
+      width: 100%;
+      padding: 5%;
+
+      h3 {
+        padding-top: 5%;
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      .techStackContainer {
+        margin: auto;
+        width: 100%;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+
+    .accountingFourthContainer {
+      min-height: 80vh;
+      width: 100%;
+      padding: 5%;
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .accountingFifthContainer {
+      min-height: 80vh;
+      width: 100%;
+      padding: 5%;
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    .accountingSixthContainer {
+      min-height: 80vh;
+      width: 100%;
+      padding: 5%;
+
+      p {
+        font-size: 1.1rem;
+      }
+
+      .buttonContainer {
+        margin-top: 20%;
+        .buttonGithub {
+          width: 50%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1100px) {
+  .accountingContainer {
+    min-height: 100vh;
+    min-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #fdfffc;
+
+    .accountingFirstContainer {
+      height: 90vh;
+      width: 100%;
+      font-size: 2.5rem;
+
+      h1 {
+        margin-top: 40%;
+      }
+
+      p {
+        font-size: 2rem;
+        padding-left: 5%;
+      }
+    }
+
+    .accountingSecondContainer {
+      height: 90vh;
+      width: 100%;
+    }
+
+    .accountingThirdContainer {
+      min-height: 80vh;
+      width: 100%;
+      padding: 5%;
+
+      h3 {
+        padding-top: 5%;
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .techStackContainer {
+        margin: auto;
+        width: 100%;
+
+        img {
+          width: 75px;
+          height: 75px;
+        }
+      }
+    }
+
+    .accountingFourthContainer {
+      min-height: 80vh;
+      width: 100%;
+      padding: 5%;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .accountingFifthContainer {
+      min-height: 80vh;
+      width: 100%;
+      padding: 5%;
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .accountingSixthContainer {
+      min-height: 80vh;
+      width: 100%;
+      padding: 5%;
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .buttonContainer {
+        margin-top: 20%;
+        .buttonGithub {
+          width: 50%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
